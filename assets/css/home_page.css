@@ -1,0 +1,60 @@
+body {
+
+ background-color: #e9e9e9;
+ font-family: "Courier New", monospace;
+ font-style: thin;
+ color: blue;
+ font-size: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+.fern {
+ max-width: 50vw;
+ max-height: 100vh;
+
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+img {
+  max-width:100%;
+  max-height: 80vh;
+
+}
+.venus {
+max-width: 50vw;
+}
+.venus:hover img {
+  -webkit-filter:blur(10px);
+  transition: .5s ease;
+  cursor: pointer;
+
+}
+
+.fern:hover img{
+  -webkit-filter:blur(10px);
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.fern:hover .text, .venus:hover .text{
+  display: block;
+  font-size: 20px;
+  margin-left: 300px;
+}
+.text{
+  display: none;
+}
